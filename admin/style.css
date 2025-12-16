@@ -1,0 +1,206 @@
+/* General Body Styling */
+body {
+    /* Set the dark blue background color */
+    background-color: #1a2039; 
+    font-family: Arial, sans-serif;
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure it takes full viewport height */
+    margin: 0;
+}
+
+/* Login Box (The White Card) */
+.login-box {
+    width: 340px; /* Slightly wider for better look */
+    background-color: #ffffff; /* White background */
+    padding: 30px; /* Increased padding */
+    border-radius: 15px; /* Smoother rounded corners */
+    /* Subtle box shadow for depth */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+}
+
+/* Heading Style */
+.login-box h1, .login-box h2 {
+    color: #333333; /* Dark text color for the heading */
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Input Fields Styling */
+.login-box input[type="text"], 
+.login-box input[type="password"] {
+    width: 100%; /* Take full width of the box padding */
+    padding: 12px 15px;
+    margin-bottom: 15px; /* Space between fields */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box; /* Padding is included in the width */
+    font-size: 16px;
+    outline: none; /* Remove default focus outline */
+    transition: border-color 0.3s;
+}
+
+.login-box input[type="text"]:focus, 
+.login-box input[type="password"]:focus {
+    border-color: #3f51b5; /* Highlight border on focus */
+}
+
+/* Login Button Styling */
+.login-box button,
+.login-box input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    /* Gradient color from the first image */
+    background-image: linear-gradient(to right, #3f51b5, #5e77e8); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.login-box button:hover,
+.login-box input[type="submit"]:hover {
+    /* Subtle hover effect */
+    opacity: 0.95;
+    transform: translateY(-1px);
+}
+
+/* "New user? Sign Up" link styling (if applicable) */
+.login-box .signup-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.login-box .signup-link a {
+    color: #3f51b5; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.login-box .signup-link a:hover {
+    color: #5e77e8;
+    text-decoration: underline;
+}
+
+.menu {
+  margin-top: 20px;
+}
+.menu a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: rgb(38, 223, 60);
+}
+ 
+/* car list css */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f4f6fa;
+}
+
+.car-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.car-list-container h1 {
+    font-size: 28px;
+    color: #1a237e;
+    margin-bottom: 20px;
+}
+
+.add-car-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #0d47a1;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.add-car-btn:hover {
+    background-color: #1565c0;
+}
+
+.car-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.car-table th, .car-table td {
+    padding: 12px 16px;
+    text-align: left;
+}
+
+.car-table thead {
+    background-color: #1a237e;
+    color: white;
+}
+
+.car-table tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+.badge {
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.badge.available {
+    background: #d4edda;
+    color: #2e7d32;
+}
+
+.badge.booked {
+    background: #f8d7da;
+    color: #c62828;
+}
+
+.badge.maintenance {
+    background: #fff3cd;
+    color: #ff6f00;
+}
+
+.badge.unknown {
+    background: #e0e0e0;
+    color: #616161;
+}
+.back-to-dashboard {
+    position: fixed; /* इसे स्क्रीन पर एक ही जगह पर रखता है */
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.back-to-dashboard a {
+    color: #4b6cb7;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.back-to-dashboard a:hover {
+    color: #3b5998;
+}

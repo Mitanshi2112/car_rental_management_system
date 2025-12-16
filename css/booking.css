@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #0e2a55; /* Dark blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container for left-right layout */
+.container {
+    display: flex;
+    flex-direction: row;   /* side by side */
+    gap: 30px;
+    max-width: 1000px;
+    width: 90%;
+}
+
+/* Left side car details */
+.car-details {
+    flex: 1;
+    color: #fff;
+}
+.car-details img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+.car-details h2 {
+    margin: 0 0 10px;
+    color: #fff;
+}
+.car-specs {
+    margin: 10px 0;
+    line-height: 1.6;
+    font-size: 14px;
+    color: #cfe1ff;
+}
+
+/* Right side form */
+.form-container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    text-align: center;
+}
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #0e2a55;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background: #0e2a55;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+button:hover {
+    background: #083473;
+}
+p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.form-container select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #fff;
+}
+
+.back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.back-arrow:hover {
+    transform: scale(1.1);
+    color: #ddd;
+}
+
+/* Responsive (mobile view) */
+@media (max-width: 850px) {
+    .container {
+        flex-direction: column; /* phone me upar-niche */
+    }
+}

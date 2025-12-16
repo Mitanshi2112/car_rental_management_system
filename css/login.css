@@ -1,0 +1,81 @@
+/* login.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0e2a55; /* Dark Blue Background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Center white box */
+.container {
+    background: #fff;
+    padding: 40px 30px;
+    width: 380px;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Heading */
+.container h1 {
+    margin-bottom: 25px;
+    color: #0e2a55;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Inputs */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    background: linear-gradient(135deg, #2b5876, #4e4376);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #4e4376, #2b5876);
+}
+
+/* Signup link */
+.container p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.container a {
+    color: #0e2a55;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: rgb(255, 0, 0);
+    font-size: 14px;
+    margin-bottom: 10px;
+}

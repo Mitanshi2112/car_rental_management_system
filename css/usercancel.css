@@ -1,0 +1,55 @@
+/* ❌ Blue-White Theme for Cancel Booking Page */
+
+body {
+  background: #e3f2fd;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.cancel-box {
+  background: #fff;
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  text-align: center;
+  width: 400px;
+}
+
+.cancel-box h2 {
+  color: #0d47a1;
+  margin-bottom: 20px;
+}
+
+.cancel-box p {
+  color: #333;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.cancel-box button {
+  background: #1565c0;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.cancel-box button:hover {
+  background: #0d47a1;
+}
+
+.cancel-box .confirm {
+  background: #e53935;
+  margin-right: 10px;
+}
+
+.cancel-box .confirm:hover {
+  background: #c62828;
+}

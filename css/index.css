@@ -1,0 +1,456 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #002f6c;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+ background: #003580;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-btns a {
+  margin-left: 15px;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.login {
+  color: white;
+}
+
+.signup {
+  background: white;
+  color: #004aad;
+  font-weight: bold;
+}
+
+.signup:hover {
+  background: #e8e8e8;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: #002f6c;
+  margin-bottom: 60px;
+  background-size: 100% auto; /* width 100% hogi, height auto */
+  height: auto;
+  
+
+}
+
+.hero-bg {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  
+}
+
+.hero-content {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.book-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #004aad;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  background: #003580;
+}
+
+/* Features Section */
+.facilities {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 60px 20px;
+  background: #003580;
+  color:  #003580;
+
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 1200px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.facility {
+    background: #f9f9f9;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.facility:hover {
+    
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.facility img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.facility h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #004aad;
+  margin-bottom: 5px;
+}
+
+.facility p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* --- HOW TO BOOK SECTION STYLES --- */
+
+/* Main Section Styling */
+.booking-steps-section {
+    width: 100%; /* Yeh zaroor add karein */
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f0f0f0; 
+    margin: 40px auto; 
+    box-sizing: border-box; /* Yeh zaroori hai! */
+    display: block;
+}
+
+/* Header Text Styling */
+.booking-header h2 {
+    font-size: 28px;
+    color: #002f6c; /* Blue color matching your navbar */
+    margin-bottom: 15px;
+}
+.booking-header p {
+    color: #555;
+    max-width: 800px; 
+    margin: 0 auto 50px auto;
+}
+
+/* Steps Container Layout */
+.steps-container {
+    display: flex;
+    justify-content: space-between; 
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 50px; 
+    position: relative; 
+}
+
+/* Connecting Line */
+.steps-container::before {
+    content: '';
+    position: absolute;
+    top: 50%; 
+    left: 10%;
+    right: 10%;
+    height: 3px; /* Thoda thick line */
+    background-color: #d1c4e9; /* Light Purple/Lavender line */
+    z-index: 0; 
+}
+
+/* Individual Step Card Styling */
+.step-card {
+    position: relative;
+    width: 20%; 
+    z-index: 1; 
+}
+
+/* Icon Styling (The circles) */
+.step-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #002f6c; /* Icon color matching your theme */
+    background-color: white;
+    border: 3px solid #002f6c; /* Blue border to stand out */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Icons ko line se upar uthane ke liye margin adjust karein */
+    margin-bottom: 40px; 
+}
+
+/* The small colored circle at the end of the line */
+.step-card:after {
+    content: '';
+    position: absolute;
+    bottom: -10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ff6b6b; /* Reddish-pink accent from your existing CSS */
+    z-index: 2;
+    border: 3px solid white; /* White border to highlight it */
+}
+
+
+/* Styling for the Number (01, 02, 03, 04) */
+.step-number {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff6b6b; /* Accent color */
+    margin-bottom: 10px;
+}
+.step-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* --- TESTIMONIALS SECTION STYLES --- */
+.testimonials-section {
+    padding: 60px 20px;
+    background: #f9f9f9; /* Light background */
+    text-align: center;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+}
+
+.review-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    flex-basis: 30%; /* Har card ko 30% width */
+    text-align: left;
+    border-top: 5px solid #ff6b6b; /* Accent color border */
+}
+
+.review-text {
+    font-style: italic;
+    color: #444;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    border-top: 1px dashed #eee;
+    padding-top: 15px;
+}
+
+.reviewer-info i {
+    font-size: 30px;
+    color: #002f6c; /* Primary color */
+    margin-right: 15px;
+}
+
+.reviewer-info strong {
+    display: block;
+    color: #333;
+    font-size: 16px;
+}
+
+.reviewer-info span {
+    font-size: 14px;
+    color: #777;
+}
+
+
+/* Footer */
+.footer {
+  background: #003580;
+  color: #ddd;
+  padding: 50px 20px 20px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section h3 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 18px;
+  border-bottom: 2px solid #fff; 
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #f1f1f1;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 12px;
+  color: #ddd;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffd700;        
+}
+
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+ border-top: 1px solid #fff;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #e6e6e6; 
+}
+/* Carousel Styles */
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    margin: 30px 0;
+}
+
+.carousel-track {
+    display: flex;
+    animation: carousel-scroll 20s linear infinite;
+    gap: 20px;
+    padding: 10px;
+}
+
+.carousel-track:hover {
+    animation-play-state: paused;
+}
+
+.car-card {
+    flex: 0 0 300px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+}
+
+@keyframes carousel-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-300px * 6 - 20px * 6)); /* Adjust based on number of cars */
+    }
+}
+
+/* Section Title */
+.section-title {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+.section-title h2 {
+    font-size: 2rem;
+    color: #333;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #ff6b6b;
+}
+
+/* Car Info */
+.car-info {
+    padding: 15px;
+}
+
+.car-info h3 {
+    margin: 5px 0;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.car-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.car-info a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff6b6b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.car-info a:hover {
+    text-decoration: underline;
+}
+
+.car-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
